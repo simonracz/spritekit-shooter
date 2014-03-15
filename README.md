@@ -1,4 +1,4 @@
-spritekit-shooter
+Sprite Kit Shooter
 =================
 
-A shooter game written in Sprite Kit.
+A shooter game written by me in Sprite Kit.
