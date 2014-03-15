@@ -18,13 +18,13 @@
 		F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48F223218D5089D00F6C259 /* Main_iPad.storyboard */; };
 		F48F223718D5089D00F6C259 /* SHTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F223618D5089D00F6C259 /* SHTViewController.m */; };
 		F48F223A18D5089D00F6C259 /* SHTMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F223918D5089D00F6C259 /* SHTMyScene.m */; };
-		F48F223C18D5089D00F6C259 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F223B18D5089D00F6C259 /* Spaceship.png */; };
 		F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48F223D18D5089D00F6C259 /* Images.xcassets */; };
 		F48F224518D5089D00F6C259 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F224418D5089D00F6C259 /* XCTest.framework */; };
 		F48F224618D5089D00F6C259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221B18D5089D00F6C259 /* Foundation.framework */; };
 		F48F224718D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
 		F48F224F18D5089D00F6C259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48F224D18D5089D00F6C259 /* InfoPlist.strings */; };
 		F48F225118D5089D00F6C259 /* spritekit_shooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */; };
+		F48F225D18D50E3F00F6C259 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F225C18D50E3F00F6C259 /* Spaceship.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +55,13 @@
 		F48F223618D5089D00F6C259 /* SHTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTViewController.m; sourceTree = "<group>"; };
 		F48F223818D5089D00F6C259 /* SHTMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTMyScene.h; sourceTree = "<group>"; };
 		F48F223918D5089D00F6C259 /* SHTMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTMyScene.m; sourceTree = "<group>"; };
-		F48F223B18D5089D00F6C259 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		F48F223D18D5089D00F6C259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F48F224318D5089D00F6C259 /* spritekit-shooterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spritekit-shooterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48F224418D5089D00F6C259 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F48F224C18D5089D00F6C259 /* spritekit-shooterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spritekit-shooterTests-Info.plist"; sourceTree = "<group>"; };
 		F48F224E18D5089D00F6C259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spritekit_shooterTests.m; sourceTree = "<group>"; };
+		F48F225C18D50E3F00F6C259 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +123,7 @@
 		F48F222318D5089D00F6C259 /* spritekit-shooter */ = {
 			isa = PBXGroup;
 			children = (
+				F48F225B18D50E0400F6C259 /* Assets */,
 				F48F222C18D5089D00F6C259 /* SHTAppDelegate.h */,
 				F48F222D18D5089D00F6C259 /* SHTAppDelegate.m */,
 				F48F222F18D5089D00F6C259 /* Main_iPhone.storyboard */,
@@ -131,7 +132,6 @@
 				F48F223618D5089D00F6C259 /* SHTViewController.m */,
 				F48F223818D5089D00F6C259 /* SHTMyScene.h */,
 				F48F223918D5089D00F6C259 /* SHTMyScene.m */,
-				F48F223B18D5089D00F6C259 /* Spaceship.png */,
 				F48F223D18D5089D00F6C259 /* Images.xcassets */,
 				F48F222418D5089D00F6C259 /* Supporting Files */,
 			);
@@ -165,6 +165,14 @@
 				F48F224D18D5089D00F6C259 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F48F225B18D50E0400F6C259 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F48F225C18D50E3F00F6C259 /* Spaceship.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48F223C18D5089D00F6C259 /* Spaceship.png in Resources */,
+				F48F225D18D50E3F00F6C259 /* Spaceship.png in Resources */,
 				F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */,
 				F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */,
 				F48F223118D5089D00F6C259 /* Main_iPhone.storyboard in Resources */,
