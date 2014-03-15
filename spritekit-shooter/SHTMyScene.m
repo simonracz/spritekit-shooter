@@ -16,6 +16,12 @@
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
+		SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"bg.png"];
+		SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture size:self.frame.size];
+		background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+		
+		[self addChild:background];
+		
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
         myLabel.text = @"Hello, World!";

@@ -14,18 +14,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	[[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
 
-    // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    
-    // Create and configure the scene.
-    SKScene * scene = [SHTMyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
-    [skView presentScene:scene];
+- (void)viewWillLayoutSubviews
+{
+	[super viewWillLayoutSubviews];
+	
+	SKView * skView = (SKView *)self.view;
+	if (!skView.scene) {
+		skView.showsFPS = YES;
+		skView.showsNodeCount = YES;
+		
+		// Create and configure the scene.
+		SKScene * scene = [SHTMyScene sceneWithSize:skView.bounds.size];
+		scene.scaleMode = SKSceneScaleModeAspectFill;
+		
+		// Present the scene.
+		[skView presentScene:scene];
+	}
 }
 
 - (BOOL)shouldAutorotate
