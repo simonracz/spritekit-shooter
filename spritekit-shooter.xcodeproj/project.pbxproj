@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F48F221C18D5089D00F6C259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221B18D5089D00F6C259 /* Foundation.framework */; };
+		F48F221E18D5089D00F6C259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221D18D5089D00F6C259 /* CoreGraphics.framework */; };
+		F48F222018D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
+		F48F222218D5089D00F6C259 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F222118D5089D00F6C259 /* SpriteKit.framework */; };
+		F48F222818D5089D00F6C259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48F222618D5089D00F6C259 /* InfoPlist.strings */; };
+		F48F222A18D5089D00F6C259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F222918D5089D00F6C259 /* main.m */; };
+		F48F222E18D5089D00F6C259 /* SHTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F222D18D5089D00F6C259 /* SHTAppDelegate.m */; };
+		F48F223118D5089D00F6C259 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48F222F18D5089D00F6C259 /* Main_iPhone.storyboard */; };
+		F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48F223218D5089D00F6C259 /* Main_iPad.storyboard */; };
+		F48F223718D5089D00F6C259 /* SHTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F223618D5089D00F6C259 /* SHTViewController.m */; };
+		F48F223A18D5089D00F6C259 /* SHTMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F223918D5089D00F6C259 /* SHTMyScene.m */; };
+		F48F223C18D5089D00F6C259 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F223B18D5089D00F6C259 /* Spaceship.png */; };
+		F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48F223D18D5089D00F6C259 /* Images.xcassets */; };
+		F48F224518D5089D00F6C259 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F224418D5089D00F6C259 /* XCTest.framework */; };
+		F48F224618D5089D00F6C259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221B18D5089D00F6C259 /* Foundation.framework */; };
+		F48F224718D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
+		F48F224F18D5089D00F6C259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48F224D18D5089D00F6C259 /* InfoPlist.strings */; };
+		F48F225118D5089D00F6C259 /* spritekit_shooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F48F224818D5089D00F6C259 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F48F221018D5089D00F6C259 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F48F221718D5089D00F6C259;
+			remoteInfo = "spritekit-shooter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F48F221818D5089D00F6C259 /* spritekit-shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spritekit-shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48F221B18D5089D00F6C259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F48F221D18D5089D00F6C259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F48F221F18D5089D00F6C259 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F48F222118D5089D00F6C259 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		F48F222518D5089D00F6C259 /* spritekit-shooter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spritekit-shooter-Info.plist"; sourceTree = "<group>"; };
+		F48F222718D5089D00F6C259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F48F222918D5089D00F6C259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F48F222B18D5089D00F6C259 /* spritekit-shooter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spritekit-shooter-Prefix.pch"; sourceTree = "<group>"; };
+		F48F222C18D5089D00F6C259 /* SHTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTAppDelegate.h; sourceTree = "<group>"; };
+		F48F222D18D5089D00F6C259 /* SHTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTAppDelegate.m; sourceTree = "<group>"; };
+		F48F223018D5089D00F6C259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F48F223318D5089D00F6C259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F48F223518D5089D00F6C259 /* SHTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTViewController.h; sourceTree = "<group>"; };
+		F48F223618D5089D00F6C259 /* SHTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTViewController.m; sourceTree = "<group>"; };
+		F48F223818D5089D00F6C259 /* SHTMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTMyScene.h; sourceTree = "<group>"; };
+		F48F223918D5089D00F6C259 /* SHTMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTMyScene.m; sourceTree = "<group>"; };
+		F48F223B18D5089D00F6C259 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		F48F223D18D5089D00F6C259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F48F224318D5089D00F6C259 /* spritekit-shooterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spritekit-shooterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48F224418D5089D00F6C259 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F48F224C18D5089D00F6C259 /* spritekit-shooterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spritekit-shooterTests-Info.plist"; sourceTree = "<group>"; };
+		F48F224E18D5089D00F6C259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spritekit_shooterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F48F221518D5089D00F6C259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F221E18D5089D00F6C259 /* CoreGraphics.framework in Frameworks */,
+				F48F222018D5089D00F6C259 /* UIKit.framework in Frameworks */,
+				F48F222218D5089D00F6C259 /* SpriteKit.framework in Frameworks */,
+				F48F221C18D5089D00F6C259 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48F224018D5089D00F6C259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F224518D5089D00F6C259 /* XCTest.framework in Frameworks */,
+				F48F224718D5089D00F6C259 /* UIKit.framework in Frameworks */,
+				F48F224618D5089D00F6C259 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F48F220F18D5089D00F6C259 = {
+			isa = PBXGroup;
+			children = (
+				F48F222318D5089D00F6C259 /* spritekit-shooter */,
+				F48F224A18D5089D00F6C259 /* spritekit-shooterTests */,
+				F48F221A18D5089D00F6C259 /* Frameworks */,
+				F48F221918D5089D00F6C259 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F48F221918D5089D00F6C259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F48F221818D5089D00F6C259 /* spritekit-shooter.app */,
+				F48F224318D5089D00F6C259 /* spritekit-shooterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F48F221A18D5089D00F6C259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48F221B18D5089D00F6C259 /* Foundation.framework */,
+				F48F221D18D5089D00F6C259 /* CoreGraphics.framework */,
+				F48F221F18D5089D00F6C259 /* UIKit.framework */,
+				F48F222118D5089D00F6C259 /* SpriteKit.framework */,
+				F48F224418D5089D00F6C259 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F48F222318D5089D00F6C259 /* spritekit-shooter */ = {
+			isa = PBXGroup;
+			children = (
+				F48F222C18D5089D00F6C259 /* SHTAppDelegate.h */,
+				F48F222D18D5089D00F6C259 /* SHTAppDelegate.m */,
+				F48F222F18D5089D00F6C259 /* Main_iPhone.storyboard */,
+				F48F223218D5089D00F6C259 /* Main_iPad.storyboard */,
+				F48F223518D5089D00F6C259 /* SHTViewController.h */,
+				F48F223618D5089D00F6C259 /* SHTViewController.m */,
+				F48F223818D5089D00F6C259 /* SHTMyScene.h */,
+				F48F223918D5089D00F6C259 /* SHTMyScene.m */,
+				F48F223B18D5089D00F6C259 /* Spaceship.png */,
+				F48F223D18D5089D00F6C259 /* Images.xcassets */,
+				F48F222418D5089D00F6C259 /* Supporting Files */,
+			);
+			path = "spritekit-shooter";
+			sourceTree = "<group>";
+		};
+		F48F222418D5089D00F6C259 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F48F222518D5089D00F6C259 /* spritekit-shooter-Info.plist */,
+				F48F222618D5089D00F6C259 /* InfoPlist.strings */,
+				F48F222918D5089D00F6C259 /* main.m */,
+				F48F222B18D5089D00F6C259 /* spritekit-shooter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F48F224A18D5089D00F6C259 /* spritekit-shooterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */,
+				F48F224B18D5089D00F6C259 /* Supporting Files */,
+			);
+			path = "spritekit-shooterTests";
+			sourceTree = "<group>";
+		};
+		F48F224B18D5089D00F6C259 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F48F224C18D5089D00F6C259 /* spritekit-shooterTests-Info.plist */,
+				F48F224D18D5089D00F6C259 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F48F221718D5089D00F6C259 /* spritekit-shooter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48F225418D5089D00F6C259 /* Build configuration list for PBXNativeTarget "spritekit-shooter" */;
+			buildPhases = (
+				F48F221418D5089D00F6C259 /* Sources */,
+				F48F221518D5089D00F6C259 /* Frameworks */,
+				F48F221618D5089D00F6C259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "spritekit-shooter";
+			productName = "spritekit-shooter";
+			productReference = F48F221818D5089D00F6C259 /* spritekit-shooter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F48F224218D5089D00F6C259 /* spritekit-shooterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48F225718D5089D00F6C259 /* Build configuration list for PBXNativeTarget "spritekit-shooterTests" */;
+			buildPhases = (
+				F48F223F18D5089D00F6C259 /* Sources */,
+				F48F224018D5089D00F6C259 /* Frameworks */,
+				F48F224118D5089D00F6C259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F48F224918D5089D00F6C259 /* PBXTargetDependency */,
+			);
+			name = "spritekit-shooterTests";
+			productName = "spritekit-shooterTests";
+			productReference = F48F224318D5089D00F6C259 /* spritekit-shooterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F48F221018D5089D00F6C259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SHT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Simon Racz";
+				TargetAttributes = {
+					F48F224218D5089D00F6C259 = {
+						TestTargetID = F48F221718D5089D00F6C259;
+					};
+				};
+			};
+			buildConfigurationList = F48F221318D5089D00F6C259 /* Build configuration list for PBXProject "spritekit-shooter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F48F220F18D5089D00F6C259;
+			productRefGroup = F48F221918D5089D00F6C259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F48F221718D5089D00F6C259 /* spritekit-shooter */,
+				F48F224218D5089D00F6C259 /* spritekit-shooterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F48F221618D5089D00F6C259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F223C18D5089D00F6C259 /* Spaceship.png in Resources */,
+				F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */,
+				F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */,
+				F48F223118D5089D00F6C259 /* Main_iPhone.storyboard in Resources */,
+				F48F222818D5089D00F6C259 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48F224118D5089D00F6C259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F224F18D5089D00F6C259 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F48F221418D5089D00F6C259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F223718D5089D00F6C259 /* SHTViewController.m in Sources */,
+				F48F222E18D5089D00F6C259 /* SHTAppDelegate.m in Sources */,
+				F48F223A18D5089D00F6C259 /* SHTMyScene.m in Sources */,
+				F48F222A18D5089D00F6C259 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48F223F18D5089D00F6C259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F225118D5089D00F6C259 /* spritekit_shooterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F48F224918D5089D00F6C259 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F48F221718D5089D00F6C259 /* spritekit-shooter */;
+			targetProxy = F48F224818D5089D00F6C259 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F48F222618D5089D00F6C259 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48F222718D5089D00F6C259 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F48F222F18D5089D00F6C259 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48F223018D5089D00F6C259 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F48F223218D5089D00F6C259 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48F223318D5089D00F6C259 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F48F224D18D5089D00F6C259 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48F224E18D5089D00F6C259 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F48F225218D5089D00F6C259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F48F225318D5089D00F6C259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F48F225518D5089D00F6C259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spritekit-shooter/spritekit-shooter-Prefix.pch";
+				INFOPLIST_FILE = "spritekit-shooter/spritekit-shooter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F48F225618D5089D00F6C259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spritekit-shooter/spritekit-shooter-Prefix.pch";
+				INFOPLIST_FILE = "spritekit-shooter/spritekit-shooter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F48F225818D5089D00F6C259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/spritekit-shooter.app/spritekit-shooter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spritekit-shooter/spritekit-shooter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "spritekit-shooterTests/spritekit-shooterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F48F225918D5089D00F6C259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/spritekit-shooter.app/spritekit-shooter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spritekit-shooter/spritekit-shooter-Prefix.pch";
+				INFOPLIST_FILE = "spritekit-shooterTests/spritekit-shooterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F48F221318D5089D00F6C259 /* Build configuration list for PBXProject "spritekit-shooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48F225218D5089D00F6C259 /* Debug */,
+				F48F225318D5089D00F6C259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F48F225418D5089D00F6C259 /* Build configuration list for PBXNativeTarget "spritekit-shooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48F225518D5089D00F6C259 /* Debug */,
+				F48F225618D5089D00F6C259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F48F225718D5089D00F6C259 /* Build configuration list for PBXNativeTarget "spritekit-shooterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48F225818D5089D00F6C259 /* Debug */,
+				F48F225918D5089D00F6C259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F48F221018D5089D00F6C259 /* Project object */;
+}
