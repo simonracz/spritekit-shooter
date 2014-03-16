@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43F277118D635F8005CD300 /* SHTMagazineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F277018D635F8005CD300 /* SHTMagazineController.m */; };
+		F43F277418D63CF4005CD300 /* Slug.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F277218D63CF4005CD300 /* Slug.png */; };
+		F43F277518D63CF4005CD300 /* SlugEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F277318D63CF4005CD300 /* SlugEmpty.png */; };
 		F48F221C18D5089D00F6C259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221B18D5089D00F6C259 /* Foundation.framework */; };
 		F48F221E18D5089D00F6C259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221D18D5089D00F6C259 /* CoreGraphics.framework */; };
 		F48F222018D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
@@ -42,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F43F276F18D635F8005CD300 /* SHTMagazineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTMagazineController.h; sourceTree = "<group>"; };
+		F43F277018D635F8005CD300 /* SHTMagazineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTMagazineController.m; sourceTree = "<group>"; };
+		F43F277218D63CF4005CD300 /* Slug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slug.png; sourceTree = "<group>"; };
+		F43F277318D63CF4005CD300 /* SlugEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlugEmpty.png; sourceTree = "<group>"; };
 		F48F221818D5089D00F6C259 /* spritekit-shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spritekit-shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48F221B18D5089D00F6C259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F48F221D18D5089D00F6C259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,7 +149,8 @@
 				F48F223618D5089D00F6C259 /* SHTViewController.m */,
 				F48F223818D5089D00F6C259 /* SHTMyScene.h */,
 				F48F223918D5089D00F6C259 /* SHTMyScene.m */,
-				F48F223D18D5089D00F6C259 /* Images.xcassets */,
+				F43F276F18D635F8005CD300 /* SHTMagazineController.h */,
+				F43F277018D635F8005CD300 /* SHTMagazineController.m */,
 				F48F222418D5089D00F6C259 /* Supporting Files */,
 			);
 			path = "spritekit-shooter";
@@ -151,6 +159,7 @@
 		F48F222418D5089D00F6C259 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F48F223D18D5089D00F6C259 /* Images.xcassets */,
 				F48F222518D5089D00F6C259 /* spritekit-shooter-Info.plist */,
 				F48F222618D5089D00F6C259 /* InfoPlist.strings */,
 				F48F222918D5089D00F6C259 /* main.m */,
@@ -180,6 +189,8 @@
 		F48F225B18D50E0400F6C259 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F43F277218D63CF4005CD300 /* Slug.png */,
+				F43F277318D63CF4005CD300 /* SlugEmpty.png */,
 				F48F226618D5FCB100F6C259 /* GunShot.wav */,
 				F48F225E18D50F3E00F6C259 /* bg.png */,
 				F48F226018D5D16E00F6C259 /* GunSmoke.sks */,
@@ -265,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43F277518D63CF4005CD300 /* SlugEmpty.png in Resources */,
+				F43F277418D63CF4005CD300 /* Slug.png in Resources */,
 				F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */,
 				F48F225F18D50F3E00F6C259 /* bg.png in Resources */,
 				F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */,
@@ -295,6 +308,7 @@
 				F48F222E18D5089D00F6C259 /* SHTAppDelegate.m in Sources */,
 				F48F223A18D5089D00F6C259 /* SHTMyScene.m in Sources */,
 				F48F222A18D5089D00F6C259 /* main.m in Sources */,
+				F43F277118D635F8005CD300 /* SHTMagazineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +527,7 @@
 				F48F225618D5089D00F6C259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F48F225718D5089D00F6C259 /* Build configuration list for PBXNativeTarget "spritekit-shooterTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +536,7 @@
 				F48F225918D5089D00F6C259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

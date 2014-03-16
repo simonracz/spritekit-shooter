@@ -8,6 +8,11 @@
 
 #import "SHTMyScene.h"
 #import <AVFoundation/AVFoundation.h>
+#import "SHTMagazineController.h"
+
+@interface SHTMyScene ()
+@property (nonatomic) SHTMagazineController* magazineController;
+@end
 
 @implementation SHTMyScene
 
@@ -23,14 +28,11 @@
 		
 		[self addChild:background];
 		
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+		SHTMagazineController* magazineController = [[SHTMagazineController alloc] init];
+		// pixels <-> points
+		magazineController.view.position = CGPointMake(CGRectGetMaxX(self.frame) - 50, CGRectGetMinY(self.frame));
+		[self addChild:magazineController.view];
+		self.magazineController = magazineController;
     }
     return self;
 }
@@ -38,6 +40,11 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
+	if (![self.magazineController shoot]) {
+		//play sound
+		return;
+	}
+	
 	UITouch* touch = [touches anyObject];
 	CGPoint location = [touch locationInNode:self];
 	
