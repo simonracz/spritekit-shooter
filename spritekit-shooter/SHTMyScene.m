@@ -40,15 +40,18 @@
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+		NSString *gunSmokePath = [[NSBundle mainBundle] pathForResource:@"GunSmoke" ofType:@"sks"];
+		SKEmitterNode *emitter = [NSKeyedUnarchiver unarchiveObjectWithFile:gunSmokePath];
+
+		emitter.position = location;
+		
+		CGFloat seconds = emitter.numParticlesToEmit / emitter.particleBirthRate + emitter.particleLifetime + emitter.particleLifetimeRange / 2;
+		
+        SKAction *action = [SKAction sequence: @[[SKAction waitForDuration:seconds], [SKAction removeFromParent]]];
         
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
+        [emitter runAction:action];
+		
+		[self addChild:emitter];
     }
 }
 
