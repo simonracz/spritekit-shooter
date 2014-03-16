@@ -1,3 +1,4 @@
+![shooter screenshot](screenshot.jpg)
 Sprite Kit Shooter
 =================
 
