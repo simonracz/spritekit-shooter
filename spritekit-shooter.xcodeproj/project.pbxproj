@@ -24,10 +24,11 @@
 		F48F224718D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
 		F48F224F18D5089D00F6C259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48F224D18D5089D00F6C259 /* InfoPlist.strings */; };
 		F48F225118D5089D00F6C259 /* spritekit_shooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */; };
-		F48F225D18D50E3F00F6C259 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F225C18D50E3F00F6C259 /* Spaceship.png */; };
 		F48F225F18D50F3E00F6C259 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F225E18D50F3E00F6C259 /* bg.png */; };
 		F48F226218D5D16E00F6C259 /* GunSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F48F226018D5D16E00F6C259 /* GunSmoke.sks */; };
 		F48F226318D5D16E00F6C259 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F226118D5D16E00F6C259 /* spark.png */; };
+		F48F226518D5FB9800F6C259 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F226418D5FB9800F6C259 /* AVFoundation.framework */; };
+		F48F226718D5FCB100F6C259 /* GunShot.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48F226618D5FCB100F6C259 /* GunShot.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +65,11 @@
 		F48F224C18D5089D00F6C259 /* spritekit-shooterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spritekit-shooterTests-Info.plist"; sourceTree = "<group>"; };
 		F48F224E18D5089D00F6C259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spritekit_shooterTests.m; sourceTree = "<group>"; };
-		F48F225C18D50E3F00F6C259 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		F48F225E18D50F3E00F6C259 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		F48F226018D5D16E00F6C259 /* GunSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GunSmoke.sks; sourceTree = "<group>"; };
 		F48F226118D5D16E00F6C259 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		F48F226418D5FB9800F6C259 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F48F226618D5FCB100F6C259 /* GunShot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GunShot.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48F226518D5FB9800F6C259 /* AVFoundation.framework in Frameworks */,
 				F48F221E18D5089D00F6C259 /* CoreGraphics.framework in Frameworks */,
 				F48F222018D5089D00F6C259 /* UIKit.framework in Frameworks */,
 				F48F222218D5089D00F6C259 /* SpriteKit.framework in Frameworks */,
@@ -117,6 +120,7 @@
 		F48F221A18D5089D00F6C259 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F48F226418D5FB9800F6C259 /* AVFoundation.framework */,
 				F48F221B18D5089D00F6C259 /* Foundation.framework */,
 				F48F221D18D5089D00F6C259 /* CoreGraphics.framework */,
 				F48F221F18D5089D00F6C259 /* UIKit.framework */,
@@ -176,8 +180,8 @@
 		F48F225B18D50E0400F6C259 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F48F226618D5FCB100F6C259 /* GunShot.wav */,
 				F48F225E18D50F3E00F6C259 /* bg.png */,
-				F48F225C18D50E3F00F6C259 /* Spaceship.png */,
 				F48F226018D5D16E00F6C259 /* GunSmoke.sks */,
 				F48F226118D5D16E00F6C259 /* spark.png */,
 			);
@@ -261,7 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48F225D18D50E3F00F6C259 /* Spaceship.png in Resources */,
 				F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */,
 				F48F225F18D50F3E00F6C259 /* bg.png in Resources */,
 				F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */,
@@ -269,6 +272,7 @@
 				F48F226318D5D16E00F6C259 /* spark.png in Resources */,
 				F48F223118D5089D00F6C259 /* Main_iPhone.storyboard in Resources */,
 				F48F222818D5089D00F6C259 /* InfoPlist.strings in Resources */,
+				F48F226718D5FCB100F6C259 /* GunShot.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

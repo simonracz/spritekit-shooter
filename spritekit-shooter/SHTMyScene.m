@@ -7,6 +7,7 @@
 //
 
 #import "SHTMyScene.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation SHTMyScene
 
@@ -37,22 +38,23 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-		NSString *gunSmokePath = [[NSBundle mainBundle] pathForResource:@"GunSmoke" ofType:@"sks"];
-		SKEmitterNode *emitter = [NSKeyedUnarchiver unarchiveObjectWithFile:gunSmokePath];
+	UITouch* touch = [touches anyObject];
+	CGPoint location = [touch locationInNode:self];
+	
+	NSString *gunSmokePath = [[NSBundle mainBundle] pathForResource:@"GunSmoke" ofType:@"sks"];
+	SKEmitterNode *emitter = [NSKeyedUnarchiver unarchiveObjectWithFile:gunSmokePath];
 
-		emitter.position = location;
-		
-		CGFloat seconds = emitter.numParticlesToEmit / emitter.particleBirthRate + emitter.particleLifetime + emitter.particleLifetimeRange / 2;
-		
-        SKAction *action = [SKAction sequence: @[[SKAction waitForDuration:seconds], [SKAction removeFromParent]]];
-        
-        [emitter runAction:action];
-		
-		[self addChild:emitter];
-    }
+	emitter.position = location;
+	emitter.targetNode = self.scene;
+	
+	CGFloat seconds = emitter.numParticlesToEmit / emitter.particleBirthRate + emitter.particleLifetime + emitter.particleLifetimeRange / 2;
+	
+	SKAction *action = [SKAction sequence: @[[SKAction waitForDuration:seconds], [SKAction removeFromParent]]];
+	[emitter runAction:action];
+	
+	[self addChild:emitter];
+	
+	[self runAction:[SKAction playSoundFileNamed:@"GunShot.wav" waitForCompletion:NO]];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
