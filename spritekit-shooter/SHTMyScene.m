@@ -22,17 +22,18 @@
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
-		SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"bg.png"];
-		SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture size:self.frame.size];
-		background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+		//SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"bg.png"];
+		//SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture size:self.frame.size];
+		SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"Background.png"];
+		background.anchorPoint = CGPointMake(0,0);
+		background.position = CGPointMake(0,0);
+				
+		SHTMagazineController* magazineController = [[SHTMagazineController alloc] init];
+		magazineController.view.position = CGPointMake(CGRectGetMaxX(background.frame) - 96, 0);
+		[background addChild:magazineController.view];
+		self.magazineController = magazineController;
 		
 		[self addChild:background];
-		
-		SHTMagazineController* magazineController = [[SHTMagazineController alloc] init];
-		// pixels <-> points
-		magazineController.view.position = CGPointMake(CGRectGetMaxX(self.frame) - 50, CGRectGetMinY(self.frame));
-		[self addChild:magazineController.view];
-		self.magazineController = magazineController;
     }
     return self;
 }

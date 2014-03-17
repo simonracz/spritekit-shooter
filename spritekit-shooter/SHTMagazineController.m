@@ -31,9 +31,9 @@
 		self.emptyShellTexture = [SKTexture textureWithImageNamed:@"SlugEmpty.png"];
 		
 		for (int i=0; i<numberOfShells; ++i) {
-			//points <-> pixels
 			SKSpriteNode *node = [SKSpriteNode spriteNodeWithTexture:self.shellTexture size:CGSizeMake(96, 43)];
-			node.position = CGPointMake(0, 33 + i*43);
+			node.anchorPoint = CGPointMake(0,0);
+			node.position = CGPointMake(0, 15 + i*43);
 			
 			[root addChild:node];
 		}
