@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F43F277118D635F8005CD300 /* SHTMagazineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F277018D635F8005CD300 /* SHTMagazineController.m */; };
-		F43F277418D63CF4005CD300 /* Slug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F277218D63CF4005CD300 /* Slug@2x.png */; };
-		F43F277518D63CF4005CD300 /* SlugEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F277318D63CF4005CD300 /* SlugEmpty@2x.png */; };
 		F47443E818D77AB100E4DF48 /* SHTPauseDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47443E718D77AB100E4DF48 /* SHTPauseDialogViewController.m */; };
 		F48F221C18D5089D00F6C259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221B18D5089D00F6C259 /* Foundation.framework */; };
 		F48F221E18D5089D00F6C259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221D18D5089D00F6C259 /* CoreGraphics.framework */; };
@@ -30,9 +28,12 @@
 		F48F225118D5089D00F6C259 /* spritekit_shooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */; };
 		F48F225F18D50F3E00F6C259 /* Background@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F225E18D50F3E00F6C259 /* Background@2x~ipad.png */; };
 		F48F226218D5D16E00F6C259 /* GunSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F48F226018D5D16E00F6C259 /* GunSmoke.sks */; };
-		F48F226318D5D16E00F6C259 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F226118D5D16E00F6C259 /* spark.png */; };
 		F48F226518D5FB9800F6C259 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F226418D5FB9800F6C259 /* AVFoundation.framework */; };
 		F48F226718D5FCB100F6C259 /* GunShot.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48F226618D5FCB100F6C259 /* GunShot.wav */; };
+		F4EB3FC618D7B20A005B5E68 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FC518D7B20A005B5E68 /* spark.png */; };
+		F4EB3FCC18D7B344005B5E68 /* Main.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FCB18D7B344005B5E68 /* Main.atlas */; };
+		F4EB3FCF18D7B34E005B5E68 /* btn-pause-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FCD18D7B34E005B5E68 /* btn-pause-default@2x.png */; };
+		F4EB3FD018D7B34E005B5E68 /* btn-pause-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FCE18D7B34E005B5E68 /* btn-pause-selected@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,6 @@
 /* Begin PBXFileReference section */
 		F43F276F18D635F8005CD300 /* SHTMagazineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTMagazineController.h; sourceTree = "<group>"; };
 		F43F277018D635F8005CD300 /* SHTMagazineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTMagazineController.m; sourceTree = "<group>"; };
-		F43F277218D63CF4005CD300 /* Slug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slug@2x.png"; sourceTree = "<group>"; };
-		F43F277318D63CF4005CD300 /* SlugEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SlugEmpty@2x.png"; sourceTree = "<group>"; };
 		F47443E618D77AB100E4DF48 /* SHTPauseDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPauseDialogViewController.h; sourceTree = "<group>"; };
 		F47443E718D77AB100E4DF48 /* SHTPauseDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTPauseDialogViewController.m; sourceTree = "<group>"; };
 		F48F221818D5089D00F6C259 /* spritekit-shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spritekit-shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,9 +76,12 @@
 		F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spritekit_shooterTests.m; sourceTree = "<group>"; };
 		F48F225E18D50F3E00F6C259 /* Background@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x~ipad.png"; sourceTree = "<group>"; };
 		F48F226018D5D16E00F6C259 /* GunSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GunSmoke.sks; sourceTree = "<group>"; };
-		F48F226118D5D16E00F6C259 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		F48F226418D5FB9800F6C259 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F48F226618D5FCB100F6C259 /* GunShot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GunShot.wav; sourceTree = "<group>"; };
+		F4EB3FC518D7B20A005B5E68 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		F4EB3FCB18D7B344005B5E68 /* Main.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Main.atlas; sourceTree = "<group>"; };
+		F4EB3FCD18D7B34E005B5E68 /* btn-pause-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-pause-default@2x.png"; sourceTree = "<group>"; };
+		F4EB3FCE18D7B34E005B5E68 /* btn-pause-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-pause-selected@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,12 +196,13 @@
 		F48F225B18D50E0400F6C259 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F43F277218D63CF4005CD300 /* Slug@2x.png */,
-				F43F277318D63CF4005CD300 /* SlugEmpty@2x.png */,
+				F4EB3FCB18D7B344005B5E68 /* Main.atlas */,
 				F48F226618D5FCB100F6C259 /* GunShot.wav */,
+				F4EB3FC518D7B20A005B5E68 /* spark.png */,
 				F48F225E18D50F3E00F6C259 /* Background@2x~ipad.png */,
+				F4EB3FCD18D7B34E005B5E68 /* btn-pause-default@2x.png */,
+				F4EB3FCE18D7B34E005B5E68 /* btn-pause-selected@2x.png */,
 				F48F226018D5D16E00F6C259 /* GunSmoke.sks */,
-				F48F226118D5D16E00F6C259 /* spark.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -281,14 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F43F277518D63CF4005CD300 /* SlugEmpty@2x.png in Resources */,
-				F43F277418D63CF4005CD300 /* Slug@2x.png in Resources */,
 				F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */,
 				F48F225F18D50F3E00F6C259 /* Background@2x~ipad.png in Resources */,
+				F4EB3FCC18D7B344005B5E68 /* Main.atlas in Resources */,
 				F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */,
+				F4EB3FCF18D7B34E005B5E68 /* btn-pause-default@2x.png in Resources */,
+				F4EB3FC618D7B20A005B5E68 /* spark.png in Resources */,
 				F48F226218D5D16E00F6C259 /* GunSmoke.sks in Resources */,
-				F48F226318D5D16E00F6C259 /* spark.png in Resources */,
 				F48F223118D5089D00F6C259 /* Main_iPhone.storyboard in Resources */,
+				F4EB3FD018D7B34E005B5E68 /* btn-pause-selected@2x.png in Resources */,
 				F48F222818D5089D00F6C259 /* InfoPlist.strings in Resources */,
 				F48F226718D5FCB100F6C259 /* GunShot.wav in Resources */,
 			);

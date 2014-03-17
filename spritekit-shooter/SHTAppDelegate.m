@@ -28,7 +28,7 @@
 	[[AVAudioSession sharedInstance] setActive:NO error:nil];
 	
 	SHTViewController* rvc = (SHTViewController*) self.window.rootViewController;
-	[rvc pauseButtonClicked:nil];	
+	rvc.paused = YES;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application

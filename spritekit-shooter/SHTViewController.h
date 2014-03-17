@@ -12,7 +12,5 @@
 #import "SHTPauseDialogViewController.h"
 
 @interface SHTViewController : UIViewController<SHTPauseDialogDelegate>
-
-- (IBAction)pauseButtonClicked:(UIButton *)sender;
-
+@property (nonatomic, getter = isPaused) BOOL paused;
 @end

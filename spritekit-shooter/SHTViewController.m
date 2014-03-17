@@ -10,7 +10,6 @@
 #import "SHTMyScene.h"
 
 @interface SHTViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
 @property (weak, nonatomic) IBOutlet UIButton *outerPauseView;
 @end
 
@@ -42,20 +41,24 @@
 	}
 }
 
+- (void) setPaused:(BOOL)pause
+{
+	if (_paused == pause) return;
+	
+	SKView* skView = (SKView *)self.view;
+	skView.paused = pause;
+	self.outerPauseView.hidden = !pause;
+	_paused = pause;
+}
+
 - (void) pauseDialogResumeDidPressed:(SHTPauseDialogViewController *)pauseDialogViewController
 {
-	self.outerPauseView.hidden = YES;
-	SKView* skView = (SKView *)self.view;
-	skView.paused = NO;
-	self.pauseButton.enabled = YES;
+	self.paused = NO;
 }
 
 - (IBAction)pauseButtonClicked:(UIButton *)sender
 {
-	self.pauseButton.enabled = NO;
-	SKView* skView = (SKView *)self.view;
-	skView.paused = YES;
-	self.outerPauseView.hidden = NO;
+	self.paused = YES;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
