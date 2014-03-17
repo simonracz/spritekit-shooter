@@ -10,6 +10,7 @@
 		F43F277118D635F8005CD300 /* SHTMagazineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F277018D635F8005CD300 /* SHTMagazineController.m */; };
 		F43F277418D63CF4005CD300 /* Slug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F277218D63CF4005CD300 /* Slug@2x.png */; };
 		F43F277518D63CF4005CD300 /* SlugEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F277318D63CF4005CD300 /* SlugEmpty@2x.png */; };
+		F47443E818D77AB100E4DF48 /* SHTPauseDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47443E718D77AB100E4DF48 /* SHTPauseDialogViewController.m */; };
 		F48F221C18D5089D00F6C259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221B18D5089D00F6C259 /* Foundation.framework */; };
 		F48F221E18D5089D00F6C259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221D18D5089D00F6C259 /* CoreGraphics.framework */; };
 		F48F222018D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 		F43F277018D635F8005CD300 /* SHTMagazineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTMagazineController.m; sourceTree = "<group>"; };
 		F43F277218D63CF4005CD300 /* Slug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slug@2x.png"; sourceTree = "<group>"; };
 		F43F277318D63CF4005CD300 /* SlugEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SlugEmpty@2x.png"; sourceTree = "<group>"; };
+		F47443E618D77AB100E4DF48 /* SHTPauseDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPauseDialogViewController.h; sourceTree = "<group>"; };
+		F47443E718D77AB100E4DF48 /* SHTPauseDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTPauseDialogViewController.m; sourceTree = "<group>"; };
 		F48F221818D5089D00F6C259 /* spritekit-shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spritekit-shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48F221B18D5089D00F6C259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F48F221D18D5089D00F6C259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +150,8 @@
 				F48F223218D5089D00F6C259 /* Main_iPad.storyboard */,
 				F48F223518D5089D00F6C259 /* SHTViewController.h */,
 				F48F223618D5089D00F6C259 /* SHTViewController.m */,
+				F47443E618D77AB100E4DF48 /* SHTPauseDialogViewController.h */,
+				F47443E718D77AB100E4DF48 /* SHTPauseDialogViewController.m */,
 				F48F223818D5089D00F6C259 /* SHTMyScene.h */,
 				F48F223918D5089D00F6C259 /* SHTMyScene.m */,
 				F43F276F18D635F8005CD300 /* SHTMagazineController.h */,
@@ -307,6 +312,7 @@
 				F48F223718D5089D00F6C259 /* SHTViewController.m in Sources */,
 				F48F222E18D5089D00F6C259 /* SHTAppDelegate.m in Sources */,
 				F48F223A18D5089D00F6C259 /* SHTMyScene.m in Sources */,
+				F47443E818D77AB100E4DF48 /* SHTPauseDialogViewController.m in Sources */,
 				F48F222A18D5089D00F6C259 /* main.m in Sources */,
 				F43F277118D635F8005CD300 /* SHTMagazineController.m in Sources */,
 			);

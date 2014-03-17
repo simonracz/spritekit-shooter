@@ -7,8 +7,9 @@
 //
 
 #import "SHTAppDelegate.h"
-#import <SpriteKit/SpriteKit.h>
-#import <AVFoundation/AVFoundation.h>
+@import SpriteKit;
+@import AVFoundation;
+#import "SHTViewController.h"
 
 @implementation SHTAppDelegate
 
@@ -26,8 +27,8 @@
 	// prevent audio crash
 	[[AVAudioSession sharedInstance] setActive:NO error:nil];
 	
-	SKView *view = (SKView *)self.window.rootViewController.view;
-	view.paused = YES;
+	SHTViewController* rvc = (SHTViewController*) self.window.rootViewController;
+	[rvc pauseButtonClicked:nil];	
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -47,8 +48,8 @@
 {
 	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 	
-	SKView *view = (SKView *)self.window.rootViewController.view;
-	view.paused = NO;
+	//SKView *view = (SKView *)self.window.rootViewController.view;
+	//view.paused = NO;
 	[[AVAudioSession sharedInstance] setActive:YES error:nil];
 }
 

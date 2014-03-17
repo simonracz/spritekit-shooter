@@ -6,9 +6,13 @@
 //  Copyright (c) 2014 Simon Racz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <SpriteKit/SpriteKit.h>
+@import UIKit;
+@import SpriteKit;
 
-@interface SHTViewController : UIViewController
+#import "SHTPauseDialogViewController.h"
+
+@interface SHTViewController : UIViewController<SHTPauseDialogDelegate>
+
+- (IBAction)pauseButtonClicked:(UIButton *)sender;
 
 @end

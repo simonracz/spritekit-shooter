@@ -9,6 +9,12 @@
 #import "SHTViewController.h"
 #import "SHTMyScene.h"
 
+@interface SHTViewController ()
+@property (weak, nonatomic) IBOutlet UIView *pauseDialog;
+@property (weak, nonatomic) IBOutlet UIButton *outerPauseView;
+
+@end
+
 @implementation SHTViewController
 
 - (void)viewDidLoad
@@ -16,6 +22,7 @@
     [super viewDidLoad];
 	
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];
+	self.outerPauseView.hidden = YES;
 }
 
 - (void)viewWillLayoutSubviews
@@ -33,6 +40,28 @@
 		
 		// Present the scene.
 		[skView presentScene:scene];
+	}
+}
+
+- (void) pauseDialogResumeDidPressed:(SHTPauseDialogViewController *)pauseDialogViewController
+{
+	self.outerPauseView.hidden = YES;
+	SKView* skView = (SKView *)self.view;
+	skView.paused = NO;
+}
+
+- (IBAction)pauseButtonClicked:(UIButton *)sender
+{
+	SKView* skView = (SKView *)self.view;
+	skView.paused = YES;
+	self.outerPauseView.hidden = NO;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([[segue identifier] isEqualToString:@"pauseSegue"]) {
+		SHTPauseDialogViewController* dvc = (SHTPauseDialogViewController*) segue.destinationViewController;
+		dvc.resumeDelegate = self;
 	}
 }
 
