@@ -10,9 +10,8 @@
 #import "SHTMyScene.h"
 
 @interface SHTViewController ()
-@property (weak, nonatomic) IBOutlet UIView *pauseDialog;
+@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
 @property (weak, nonatomic) IBOutlet UIButton *outerPauseView;
-
 @end
 
 @implementation SHTViewController
@@ -48,10 +47,12 @@
 	self.outerPauseView.hidden = YES;
 	SKView* skView = (SKView *)self.view;
 	skView.paused = NO;
+	self.pauseButton.enabled = YES;
 }
 
 - (IBAction)pauseButtonClicked:(UIButton *)sender
 {
+	self.pauseButton.enabled = NO;
 	SKView* skView = (SKView *)self.view;
 	skView.paused = YES;
 	self.outerPauseView.hidden = NO;
