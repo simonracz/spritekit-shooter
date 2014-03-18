@@ -39,7 +39,7 @@
                                             <constraint firstAttribute="width" constant="320" id="3Lc-ZT-U8Z"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="yFf-ei-xcL" kind="embed" id="rmi-0T-e4k"/>
+                                            <segue destination="yFf-ei-xcL" kind="embed" identifier="pauseSegue" id="rmi-0T-e4k"/>
                                         </connections>
                                     </containerView>
                                 </subviews>

@@ -36,7 +36,6 @@
 }
 
 - (IBAction)resumeClicked:(UIButton *)sender {	
-	//NSLog(@"%@", NSStringFromSelector(_cmd));
 	[self.resumeDelegate pauseDialogResumeDidPressed:self];
 }
 

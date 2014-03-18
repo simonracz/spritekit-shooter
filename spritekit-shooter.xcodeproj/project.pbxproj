@@ -26,7 +26,6 @@
 		F48F224718D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
 		F48F224F18D5089D00F6C259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48F224D18D5089D00F6C259 /* InfoPlist.strings */; };
 		F48F225118D5089D00F6C259 /* spritekit_shooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */; };
-		F48F225F18D50F3E00F6C259 /* Background@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F48F225E18D50F3E00F6C259 /* Background@2x~ipad.png */; };
 		F48F226218D5D16E00F6C259 /* GunSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F48F226018D5D16E00F6C259 /* GunSmoke.sks */; };
 		F48F226518D5FB9800F6C259 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F226418D5FB9800F6C259 /* AVFoundation.framework */; };
 		F48F226718D5FCB100F6C259 /* GunShot.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48F226618D5FCB100F6C259 /* GunShot.wav */; };
@@ -34,6 +33,10 @@
 		F4EB3FCC18D7B344005B5E68 /* Main.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FCB18D7B344005B5E68 /* Main.atlas */; };
 		F4EB3FCF18D7B34E005B5E68 /* btn-pause-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FCD18D7B34E005B5E68 /* btn-pause-default@2x.png */; };
 		F4EB3FD018D7B34E005B5E68 /* btn-pause-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FCE18D7B34E005B5E68 /* btn-pause-selected@2x.png */; };
+		F4EB3FD518D7BF1F005B5E68 /* Background-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FD118D7BF1F005B5E68 /* Background-568h@2x~iphone.png */; };
+		F4EB3FD618D7BF1F005B5E68 /* Background@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FD218D7BF1F005B5E68 /* Background@2x~ipad.png */; };
+		F4EB3FD718D7BF1F005B5E68 /* Background@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FD318D7BF1F005B5E68 /* Background@2x~iphone.png */; };
+		F4EB3FD818D7BF1F005B5E68 /* Background~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F4EB3FD418D7BF1F005B5E68 /* Background~ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +77,6 @@
 		F48F224C18D5089D00F6C259 /* spritekit-shooterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spritekit-shooterTests-Info.plist"; sourceTree = "<group>"; };
 		F48F224E18D5089D00F6C259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F48F225018D5089D00F6C259 /* spritekit_shooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spritekit_shooterTests.m; sourceTree = "<group>"; };
-		F48F225E18D50F3E00F6C259 /* Background@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x~ipad.png"; sourceTree = "<group>"; };
 		F48F226018D5D16E00F6C259 /* GunSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GunSmoke.sks; sourceTree = "<group>"; };
 		F48F226418D5FB9800F6C259 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F48F226618D5FCB100F6C259 /* GunShot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GunShot.wav; sourceTree = "<group>"; };
@@ -82,6 +84,10 @@
 		F4EB3FCB18D7B344005B5E68 /* Main.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Main.atlas; sourceTree = "<group>"; };
 		F4EB3FCD18D7B34E005B5E68 /* btn-pause-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-pause-default@2x.png"; sourceTree = "<group>"; };
 		F4EB3FCE18D7B34E005B5E68 /* btn-pause-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-pause-selected@2x.png"; sourceTree = "<group>"; };
+		F4EB3FD118D7BF1F005B5E68 /* Background-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		F4EB3FD218D7BF1F005B5E68 /* Background@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x~ipad.png"; sourceTree = "<group>"; };
+		F4EB3FD318D7BF1F005B5E68 /* Background@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x~iphone.png"; sourceTree = "<group>"; };
+		F4EB3FD418D7BF1F005B5E68 /* Background~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background~ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,10 +202,13 @@
 		F48F225B18D50E0400F6C259 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F4EB3FD118D7BF1F005B5E68 /* Background-568h@2x~iphone.png */,
+				F4EB3FD218D7BF1F005B5E68 /* Background@2x~ipad.png */,
+				F4EB3FD318D7BF1F005B5E68 /* Background@2x~iphone.png */,
+				F4EB3FD418D7BF1F005B5E68 /* Background~ipad.png */,
 				F4EB3FCB18D7B344005B5E68 /* Main.atlas */,
 				F48F226618D5FCB100F6C259 /* GunShot.wav */,
 				F4EB3FC518D7B20A005B5E68 /* spark.png */,
-				F48F225E18D50F3E00F6C259 /* Background@2x~ipad.png */,
 				F4EB3FCD18D7B34E005B5E68 /* btn-pause-default@2x.png */,
 				F4EB3FCE18D7B34E005B5E68 /* btn-pause-selected@2x.png */,
 				F48F226018D5D16E00F6C259 /* GunSmoke.sks */,
@@ -285,12 +294,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */,
-				F48F225F18D50F3E00F6C259 /* Background@2x~ipad.png in Resources */,
+				F4EB3FD618D7BF1F005B5E68 /* Background@2x~ipad.png in Resources */,
 				F4EB3FCC18D7B344005B5E68 /* Main.atlas in Resources */,
 				F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */,
 				F4EB3FCF18D7B34E005B5E68 /* btn-pause-default@2x.png in Resources */,
 				F4EB3FC618D7B20A005B5E68 /* spark.png in Resources */,
+				F4EB3FD818D7BF1F005B5E68 /* Background~ipad.png in Resources */,
 				F48F226218D5D16E00F6C259 /* GunSmoke.sks in Resources */,
+				F4EB3FD718D7BF1F005B5E68 /* Background@2x~iphone.png in Resources */,
+				F4EB3FD518D7BF1F005B5E68 /* Background-568h@2x~iphone.png in Resources */,
 				F48F223118D5089D00F6C259 /* Main_iPhone.storyboard in Resources */,
 				F4EB3FD018D7B34E005B5E68 /* btn-pause-selected@2x.png in Resources */,
 				F48F222818D5089D00F6C259 /* InfoPlist.strings in Resources */,

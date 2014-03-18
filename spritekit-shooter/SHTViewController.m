@@ -43,8 +43,9 @@
 
 - (void) setPaused:(BOOL)pause
 {
+	//NSLog(@"%@", NSStringFromSelector(_cmd));
 	if (_paused == pause) return;
-	
+		
 	SKView* skView = (SKView *)self.view;
 	skView.paused = pause;
 	self.outerPauseView.hidden = !pause;

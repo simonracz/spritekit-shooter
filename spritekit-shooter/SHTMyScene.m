@@ -10,6 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import "SHTMagazineController.h"
 
+#define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 @interface SHTMyScene ()
 @property (nonatomic) SHTMagazineController* magazineController;
 @end
@@ -24,7 +26,13 @@
         
 		//SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"bg.png"];
 		//SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture size:self.frame.size];
-		SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"Background.png"];
+		SKSpriteNode *background;
+		if (IS_WIDESCREEN) {
+			SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"Background-568h@2x~iphone.png"];
+			background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture size:self.frame.size];
+		} else {
+			background = [SKSpriteNode spriteNodeWithImageNamed:@"Background"];
+		}
 		background.anchorPoint = CGPointMake(0,0);
 		background.position = CGPointMake(0,0);
 				
