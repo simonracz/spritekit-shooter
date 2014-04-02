@@ -49,7 +49,7 @@
     /* Called when a touch begins */
     
 	if (![self.magazineController shoot]) {
-		//play sound
+		[self runAction:[SKAction playSoundFileNamed:@"Empty.wav" waitForCompletion:NO]];
 		return;
 	}
 	
