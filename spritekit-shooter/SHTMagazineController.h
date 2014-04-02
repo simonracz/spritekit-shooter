@@ -9,9 +9,14 @@
 @import Foundation;
 @import SpriteKit;
 
+@protocol SHTMagazineControllerDelegate <NSObject>
+- (void) ammoLoaded:(int) index;
+@end
+
 @interface SHTMagazineController : NSObject
 
 @property (nonatomic, strong) SKNode* view;
+@property (nonatomic, weak) id<SHTMagazineControllerDelegate> delegate;
 
 - (BOOL) canShoot; //returns whether shooting is enabled
 - (BOOL) shoot; //returns whether shooting is enabled

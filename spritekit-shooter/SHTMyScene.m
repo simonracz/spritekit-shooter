@@ -24,8 +24,6 @@
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
-		//SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"bg.png"];
-		//SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:backgroundTexture size:self.frame.size];
 		SKSpriteNode *background;
 		if (IS_WIDESCREEN) {
 			SKTexture *backgroundTexture = [SKTexture textureWithImageNamed:@"Background-568h@2x~iphone.png"];
@@ -37,6 +35,7 @@
 		background.position = CGPointMake(0,0);
 				
 		SHTMagazineController* magazineController = [[SHTMagazineController alloc] init];
+		magazineController.delegate = self;
 		magazineController.view.position = CGPointMake(CGRectGetMaxX(background.frame) - 96, 0);
 		[background addChild:magazineController.view];
 		self.magazineController = magazineController;
@@ -71,6 +70,11 @@
 	[self addChild:emitter];
 	
 	[self runAction:[SKAction playSoundFileNamed:@"GunShot.wav" waitForCompletion:NO]];
+}
+
+- (void)ammoLoaded:(int)index
+{
+	[self runAction:[SKAction playSoundFileNamed:@"Reload.wav" waitForCompletion:NO]];
 }
 
 -(void)update:(CFTimeInterval)currentTime {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F43F277118D635F8005CD300 /* SHTMagazineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43F277018D635F8005CD300 /* SHTMagazineController.m */; };
 		F47443E818D77AB100E4DF48 /* SHTPauseDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47443E718D77AB100E4DF48 /* SHTPauseDialogViewController.m */; };
+		F478463C18ECB6B6004B3E7F /* Reload.wav in Resources */ = {isa = PBXBuildFile; fileRef = F478463B18ECB6B6004B3E7F /* Reload.wav */; };
 		F48F221C18D5089D00F6C259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221B18D5089D00F6C259 /* Foundation.framework */; };
 		F48F221E18D5089D00F6C259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221D18D5089D00F6C259 /* CoreGraphics.framework */; };
 		F48F222018D5089D00F6C259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F221F18D5089D00F6C259 /* UIKit.framework */; };
@@ -54,7 +55,8 @@
 		F43F277018D635F8005CD300 /* SHTMagazineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTMagazineController.m; sourceTree = "<group>"; };
 		F47443E618D77AB100E4DF48 /* SHTPauseDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPauseDialogViewController.h; sourceTree = "<group>"; };
 		F47443E718D77AB100E4DF48 /* SHTPauseDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTPauseDialogViewController.m; sourceTree = "<group>"; };
-		F48F221818D5089D00F6C259 /* spritekit-shooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spritekit-shooter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F478463B18ECB6B6004B3E7F /* Reload.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Reload.wav; sourceTree = "<group>"; };
+		F48F221818D5089D00F6C259 /* Bang!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bang!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48F221B18D5089D00F6C259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F48F221D18D5089D00F6C259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F48F221F18D5089D00F6C259 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -129,7 +131,7 @@
 		F48F221918D5089D00F6C259 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F48F221818D5089D00F6C259 /* spritekit-shooter.app */,
+				F48F221818D5089D00F6C259 /* Bang!.app */,
 				F48F224318D5089D00F6C259 /* spritekit-shooterTests.xctest */,
 			);
 			name = Products;
@@ -202,6 +204,7 @@
 		F48F225B18D50E0400F6C259 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F478463B18ECB6B6004B3E7F /* Reload.wav */,
 				F4EB3FD118D7BF1F005B5E68 /* Background-568h@2x~iphone.png */,
 				F4EB3FD218D7BF1F005B5E68 /* Background@2x~ipad.png */,
 				F4EB3FD318D7BF1F005B5E68 /* Background@2x~iphone.png */,
@@ -233,7 +236,7 @@
 			);
 			name = "spritekit-shooter";
 			productName = "spritekit-shooter";
-			productReference = F48F221818D5089D00F6C259 /* spritekit-shooter.app */;
+			productReference = F48F221818D5089D00F6C259 /* Bang!.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F48F224218D5089D00F6C259 /* spritekit-shooterTests */ = {
@@ -296,6 +299,7 @@
 				F48F223E18D5089D00F6C259 /* Images.xcassets in Resources */,
 				F4EB3FD618D7BF1F005B5E68 /* Background@2x~ipad.png in Resources */,
 				F4EB3FCC18D7B344005B5E68 /* Main.atlas in Resources */,
+				F478463C18ECB6B6004B3E7F /* Reload.wav in Resources */,
 				F48F223418D5089D00F6C259 /* Main_iPad.storyboard in Resources */,
 				F4EB3FCF18D7B34E005B5E68 /* btn-pause-default@2x.png in Resources */,
 				F4EB3FC618D7B20A005B5E68 /* spark.png in Resources */,
@@ -469,7 +473,7 @@
 				GCC_PREFIX_HEADER = "spritekit-shooter/spritekit-shooter-Prefix.pch";
 				INFOPLIST_FILE = "spritekit-shooter/spritekit-shooter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bang!";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -484,7 +488,7 @@
 				GCC_PREFIX_HEADER = "spritekit-shooter/spritekit-shooter-Prefix.pch";
 				INFOPLIST_FILE = "spritekit-shooter/spritekit-shooter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bang!";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};

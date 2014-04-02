@@ -55,7 +55,7 @@
 		return;
 	}
 	
-	//play sound
+	[self.delegate ammoLoaded:cursor];
 	
 	[self.nodes[cursor + 1] setTexture:self.shellTexture];
 	++cursor;

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F48F221718D5089D00F6C259"
-               BuildableName = "spritekit-shooter.app"
+               BuildableName = "Bang!.app"
                BlueprintName = "spritekit-shooter"
                ReferencedContainer = "container:spritekit-shooter.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F48F221718D5089D00F6C259"
-            BuildableName = "spritekit-shooter.app"
+            BuildableName = "Bang!.app"
             BlueprintName = "spritekit-shooter"
             ReferencedContainer = "container:spritekit-shooter.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F48F221718D5089D00F6C259"
-            BuildableName = "spritekit-shooter.app"
+            BuildableName = "Bang!.app"
             BlueprintName = "spritekit-shooter"
             ReferencedContainer = "container:spritekit-shooter.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F48F221718D5089D00F6C259"
-            BuildableName = "spritekit-shooter.app"
+            BuildableName = "Bang!.app"
             BlueprintName = "spritekit-shooter"
             ReferencedContainer = "container:spritekit-shooter.xcodeproj">
          </BuildableReference>

@@ -6,8 +6,10 @@
 //  Copyright (c) 2014 Simon Racz. All rights reserved.
 //
 
-#import <SpriteKit/SpriteKit.h>
+@import SpriteKit;
 
-@interface SHTMyScene : SKScene
+#import "SHTMagazineController.h"
+
+@interface SHTMyScene : SKScene <SHTMagazineControllerDelegate>
 
 @end
