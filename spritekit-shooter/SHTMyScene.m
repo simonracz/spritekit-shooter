@@ -9,11 +9,13 @@
 #import "SHTMyScene.h"
 #import <AVFoundation/AVFoundation.h>
 #import "SHTMagazineController.h"
+#import "SHTBalloonController.h"
 
 #define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
 @interface SHTMyScene ()
 @property (nonatomic) SHTMagazineController* magazineController;
+@property (nonatomic) SHTBalloonController* balloonController;
 @end
 
 @implementation SHTMyScene
@@ -40,9 +42,21 @@
 		[background addChild:magazineController.view];
 		self.magazineController = magazineController;
 		
+		SHTBalloonController* bc = [[SHTBalloonController alloc] init];
+		self.balloonController = bc;
+		[background addChild:bc.view];
+		
 		[self addChild:background];
     }
     return self;
+}
+
+- (void) setPaused:(BOOL)paused
+{
+	[super setPaused:paused];
+	
+	self.balloonController.paused = paused;
+	//magazineController
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -70,6 +84,13 @@
 	[self addChild:emitter];
 	
 	[self runAction:[SKAction playSoundFileNamed:@"GunShot.wav" waitForCompletion:NO]];
+	
+	SKNode* node = [self.balloonController.view nodeAtPoint:location];
+	if ([node isKindOfClass:[SKSpriteNode class]]) {
+		[node removeAllActions];
+		//boom
+		[node removeFromParent];
+	}
 }
 
 - (void)ammoLoaded:(int)index

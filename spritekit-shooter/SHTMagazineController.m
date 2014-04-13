@@ -64,7 +64,7 @@
 - (void) timerWithRepeatCount:(int) count
 {
 	SKAction* timer = [SKAction sequence:@[[SKAction waitForDuration:1.0],[SKAction repeatAction:[SKAction sequence:@[[SKAction performSelector:@selector(reload) onTarget:self],[SKAction waitForDuration:0.2]]] count:count]]];
-	[self.view runAction:timer withKey:@"timer"];
+	[self.view runAction:timer withKey:@"magazineTimer"];
 }
 
 - (BOOL) shoot
@@ -84,7 +84,7 @@
 
 - (void) reset
 {
-	[self.view removeActionForKey:@"timer"];
+	[self.view removeActionForKey:@"magazineTimer"];
 	
 	while (cursor<5) {
 		[self.nodes[cursor + 1] setTexture:self.shellTexture];
